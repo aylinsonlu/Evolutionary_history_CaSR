@@ -105,7 +105,7 @@ To create 50 different csv files:
 python create_ml_csv.py 
 ```
 
-To train model, *run_xgb_varImp_feature_elimination.R* code was used by giving id. To train all splitted datasets, the code was called 50 times by giving ids 1 to 50.  
+To train model,  `run_xgb_varImp_feature_elimination.R` code was used by giving id. To train all splitted datasets, the code was called 50 times by giving ids 1 to 50.  
 
 ```
 Rscript run_xgb_varImp_feature_elimination.R $id 
@@ -113,18 +113,18 @@ Rscript run_xgb_varImp_feature_elimination.R $id
 
 Results were saved as Rdata files: `casr_xgb_replication_id_prauc.RData`, `casr_xgb_replication_id_prediction.RData`, `casr_xgb_replication_id_result.RData`, `casr_xgb_replication_id_state.RData`, `casr_xgb_replication_id_xgb.model` 
 
-To plot AUROC and AUPR for train and test s`ets, Rdata files were also saved as csv with `Results_to_csv.R` and organized the csv files by using `casr_ml_parse_auc.py` for simplicity.
+To plot AUROC and AUPR for train and test sets, Rdata files were also saved as csv with `Results_to_csv.R` and organized the csv files by using `casr_ml_parse_auc.py` for simplicity.
 
 `casr_ml_results.R` code draws AUROC and AUPR graphs for train and test sets.
 
-After model performance was reportes, 5 fold-cross validation was used to select features to train whole dataset.
+After model performance was reported, 5 fold-cross validation was used to select features to train whole dataset.
 
 `create_final_test_csv.py` creates the 5 validation and one whole dataset csv files. Final features were selected by running:
 ```
 Rscript feature_selection_grid_search_cv.R 1
 ```
 
-To make predictions for all substitutions at each position, `neutral` substitutions were eliminated and final test csv was created from a new UNIPROT alignments by usin `create_final_test_csv.py` code. 
+To make predictions for all substitutions at each position, `neutral` substitutions were eliminated (If an amino acid is observed in the alignment of CaSR) and final test csv was created from a new UNIPROT alignments by using `create_final_test_csv.py` code. 
 
 Whole dataset trained and test predictions were made by `train_whole_data.R` code. Whole train and test predictions scores were saved as csv files.
 
