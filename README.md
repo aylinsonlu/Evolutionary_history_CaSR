@@ -5,7 +5,7 @@ Evolutionary history of Calcium-sensing receptors sheds light into hyper/hypocal
 Proteomes were downloaded from [NCBI](https://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/)
 
 
-To get all class C GPCRs 7tm_3 domain profile was used. Each species proteome was searched against `7tm_3.hmm`. Following python code takes each species proteome file, performed hmmseach and saves the result. For example, the human proteome with the ID `9606` was searched against `7tm_3.hmm`, and the result file was saved as *9606.out*.
+To get all class C GPCRs 7tm_3 domain profile was used. Each species proteome was searched against `7tm_3.hmm`. Following python code takes each species proteome file, performs hmmseach and saves the result. For example, the human proteome with the ID `9606` was searched against `7tm_3.hmm`, and the result file was saved as *9606.out*.
  ```
  python do_hmmsearch.py
  
