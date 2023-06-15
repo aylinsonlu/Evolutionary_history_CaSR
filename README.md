@@ -1,5 +1,5 @@
-# Evolutionary_history_CaSR
-Evolutionary history of Calcium-sensing receptors sheds light into hyper/hypocalcemia-causing mutations
+# Evolutionary history of Calcium-sensing receptors sheds light into hyper/hypocalcemia-causing mutations
+
 ## Retrieve all class C GPCRs
 
 Proteomes were downloaded from [NCBI](https://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/)
