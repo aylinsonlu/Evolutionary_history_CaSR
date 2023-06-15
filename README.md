@@ -132,7 +132,7 @@ To find feature importance SHAP values were calculated and graph was plotted by 
 
 Test and whole train csv files were also created without BLOSUM encoding to show amino acid names by `dummy_aa_csv.py` and `dummy_aa_test_csv.py` codes.
 
-To draw heatmap, `R_heatmap_csv.py` code was used to prepare a csv file includes `position`, `substitution`, vprediction`,`result`. `test_heatmap.R` code draws the heatmap and substituton count graphs. 
+To draw heatmap, `R_heatmap_csv.py` code was used to prepare a csv file includes `position`, `substitution`, `prediction`,`result`. `test_heatmap.R` code draws the heatmap and substituton count graphs. 
 
 
 
